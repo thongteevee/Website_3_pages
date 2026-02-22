@@ -12,6 +12,14 @@
   box-sizing: border-box;
 }
 
+html {
+  cursor: url("../images/cursor.png") 8 8, auto;
+}
+
+a, button, input, textarea, select, label {
+  cursor: url("../images/cursor-click.png") 8 8, pointer;
+}
+
 body {
   margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
