@@ -44,10 +44,11 @@ a:hover {
 
 header.site-header {
   border-bottom: 1px solid var(--border);
-  background: rgba(252, 245, 238, 0.9);
+  background: #EE6983;
   position: sticky;
   top: 0;
   z-index: 10;
+  color: #ffe4fe
 }
 
 .header-inner {
@@ -75,6 +76,10 @@ header.site-header {
   margin: 0;
   font-size: 1.05rem;
   letter-spacing: 0.5px;
+}
+
+.artist-card h2 {
+  margin-top: 18px;
 }
 
 nav .nav {
