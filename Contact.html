@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacts | Annie Nguyen</title>
+  <meta name="description" content="Contacts page where visitors can leave a message and view a public wall.">
+  <meta name="author" content="Annie Nguyen">
+  <meta name="keywords" content="Contacts, guestbook, NJIT, Annie Nguyen, HTML, CSS, form">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo-dot"></div>
+        <h2>Annie Nguyen</h2>
+      </div>
+
+      <nav>
+        <div class="nav">
+          <a href="Index.html">Home</a>
+          <a href="Services.html">Services</a>
+          <a href="Contact.html" class="active">Contacts</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card hero">
+      <div>
+        <h1>Contacts</h1>
+        <h2>Leave something behind</h2>
+        <p>
+          This page is a <b>digital Contacts</b>. Visitors can leave a message,
+          a thought, or a memory. Built with <i>HTML</i> and styled with <u>CSS</u>.
+        </p>
+        <p class="muted">
+          External link: <a href="https://www.njit.edu" target="_blank">NJIT</a>
+        </p>
+      </div>
+
+      <img src="../images/service3.jpg" alt="Contacts image">
+    </section>
+
+    <hr>
+
+    <section class="card">
+      <h2>Public Memory Wall</h2>
+      <h3>Shared messages</h3>
+      <p class="muted">Sample memories displayed publicly on the page:</p>
+
+      <ul>
+        <li><b>Anonymous:</b> <i>“Remember the rules, not the exception</i></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Add Your Memory</h2>
+      <h3>Memory submission form</h3>
+
+      <form action="#" method="post">
+        <label for="name">Your Name (blank for anonymous)</label>
+        <input type="text" id="name" name="name" placeholder="Optional">
+
+        <label for="phone">Phone Number (required)</label>
+        <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+
+        <label for="memory">Your Memory or Message</label>
+        <textarea id="memory" name="memory" rows="5" placeholder="Write something meaningful..."></textarea>
+
+        <fieldset>
+          <legend>Are you a NJIT student? (Yes / No)</legend>
+          <div class="inline">
+            <label><input type="radio" name="njitStudent" value="yes"> Yes</label>
+            <label><input type="radio" name="njitStudent" value="no"> No</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your Interests (Checkbox requirement)</legend>
+          <div class="inline">
+            <label><input type="checkbox" name="hobbies" value="food"> Food</label>
+            <label><input type="checkbox" name="hobbies" value="photography"> Photography</label>
+            <label><input type="checkbox" name="hobbies" value="travel"> Travel</label>
+            <label><input type="checkbox" name="hobbies" value="music"> Music</label>
+          </div>
+        </fieldset>
+
+        <div class="inline">
+          <button type="submit">Add Memory</button>
+          <button type="reset">Clear</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Annie Nguyen</p>
+    </div>
+  </footer>
+  <script src="scripts/memory.js"></script>
+</body>
+</html>
