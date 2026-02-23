@@ -88,7 +88,7 @@ nav .nav {
   flex-wrap: wrap;
 }
 
-nav .nav a {
+nav .nav a.active {
   display: inline-block;
   padding: 9px 12px;
   border: 1px solid var(--border);
@@ -106,7 +106,7 @@ nav .nav a:hover {
   text-decoration: none;
 }
 
-nav .nav a.active {
+nav .nav a {
   background: var(--accent);
   color: #ffffff;
   border-color: var(--accent);
